@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
     <style>
+        
+
+        @font-face {
+    font-family: 'DS-Digital Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DS-Digital Normal'), url('DS-DIGI.woff') format('woff');
+    }
+    
+
         .calculator{
             height: 300px;
             width: 250px;
@@ -24,6 +34,7 @@
             font-size: 25px;
             padding: 5px 10px;
             margin-bottom: 20px;
+            font-family:"DS-Digital Normal" ;
         }
         .button-container{
             height: 200px;
@@ -42,8 +53,9 @@
             border-radius: 5px;
             cursor: pointer;
         }
-        .btn-hover{
+        .btn:hover{
             box-shadow: 0 0 5px #fff;
+            transition: 0.5s;
         }
         .btn-equals{
             background-color:#ff6348 ;
